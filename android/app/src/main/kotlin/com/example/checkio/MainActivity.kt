@@ -1,4 +1,4 @@
-package com.example.chekio
+package com.example.checkio
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.chekio">
+    package="com.example.checkio">
    <application
-        android:label="chekio"
+        android:label="checkio"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

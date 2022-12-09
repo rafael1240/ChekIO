@@ -12,27 +12,35 @@ class _ItemComponentState extends State<ItemComponent> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(20),
-      margin: const EdgeInsets.symmetric(horizontal: 20,vertical: 10),
+      padding: const EdgeInsets.all(30),
+      margin: const EdgeInsets.symmetric(vertical: 10),
       decoration: BoxDecoration(
-        color: Colors.white54,
-        borderRadius: BorderRadius.circular(15),
+        borderRadius: BorderRadius.circular(10),
         boxShadow: [
           BoxShadow(
-            blurRadius: 5.0,
-            color: Color.fromARGB(255, 230, 230, 230),
-            spreadRadius: 2.0,
+            blurRadius: 15,
+            color: Color.fromARGB(31, 15, 15, 15),
+            spreadRadius: 1
           )
-        ]
+        ],
+        color: Colors.white,
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Icon(Icons.circle,color: Colors.blue,),
           Row(
             children: [
-              Icon(Icons.person),
-              Text(widget.people)
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 10),
+                child: Icon(Icons.circle,color: Colors.blue,) 
+              ),
+              Text("nome",style: TextStyle(color: Colors.grey.shade500),)
+            ],
+          ),
+          Row(
+            children: [
+              Icon(Icons.person,color: Colors.grey.shade500),
+              Text(widget.people,style: TextStyle(color: Colors.grey.shade500),)
             ],
           )
         ],
