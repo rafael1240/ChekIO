@@ -54,7 +54,7 @@ class _ViewOnePageState extends State<ViewOnePage> {
                   children: [
                     Padding(
                       padding: EdgeInsets.all(20),
-                      child: Text("Welcome,\nUser !",
+                      child: Text("Bem vindo,\nUser !",
                         textAlign: TextAlign.left,
                         style: TextStyle(
                           color: Colors.white,
@@ -81,7 +81,7 @@ class _ViewOnePageState extends State<ViewOnePage> {
                     decoration: InputDecoration( 
                       fillColor: Colors.white,
                       contentPadding: EdgeInsets.symmetric(horizontal: 30,vertical: 20),
-                      hintText: "Search events", 
+                      hintText: "Buscar eventos", 
                       filled: true, 
                       border: InputBorder.none,
                       prefixIcon: IconButton(

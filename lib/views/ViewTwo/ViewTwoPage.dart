@@ -23,7 +23,7 @@ class _ViewTwoPageState extends State<ViewTwoPage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("Your events !",
+                  Text("Seus eventos !",
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 30,

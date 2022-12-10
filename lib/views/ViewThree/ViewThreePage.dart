@@ -58,6 +58,7 @@ class _ViewThreePageState extends State<ViewThreePage> {
                         children: [
                           TextButton(
                             onPressed: (){
+                              Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => ViewLoginComponent()));
                             }, 
                             child: Text("Sair",
                               style: TextStyle(
@@ -66,8 +67,7 @@ class _ViewThreePageState extends State<ViewThreePage> {
                             )
                           ),
                           IconButton(
-                            onPressed: (){
-                            },
+                            onPressed: (){},
                             icon: Icon(Icons.circle),
                             iconSize: 40,
                             color: Colors.white,
@@ -82,6 +82,32 @@ class _ViewThreePageState extends State<ViewThreePage> {
             )
           ),
         ),
+      ),
+      body: Column(
+        children: [
+          Padding(
+            padding: EdgeInsets.all(40), 
+            child: Row(
+              children: [
+                Text("Nome: User",style: TextStyle(
+                  fontSize: 24,
+                  color: Colors.black26
+                ),)
+              ],
+            )
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 40,vertical: 10),
+            child: Row(
+              children: [
+                Text("Email: user@gmail.com",style: TextStyle(
+                  fontSize: 24,
+                  color: Colors.black26
+                ),)
+              ],
+            ),
+          )
+        ],
       ),
     );
   }

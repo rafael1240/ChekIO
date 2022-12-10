@@ -8,7 +8,7 @@ import '../ViewLogin/ViewLoginComponent.dart';
 
 
 class ViewPrincipal extends StatefulWidget {
-  const ViewPrincipal({super.key});
+  ViewPrincipal({super.key});
 
   @override
   State<ViewPrincipal> createState() => _ViewPrincipalState();

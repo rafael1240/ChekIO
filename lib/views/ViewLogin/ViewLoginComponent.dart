@@ -10,7 +10,7 @@ class ViewLoginComponent extends StatefulWidget {
 }
 
 class _ViewLoginComponentState extends State<ViewLoginComponent> {
-  bool _loginpass = false;
+  bool  _loginpass = false;
   bool _obscurePassword = true;
   bool _passworError = false;
   bool _emailError = false;
@@ -18,8 +18,8 @@ class _ViewLoginComponentState extends State<ViewLoginComponent> {
   TextEditingController _controllerPassword = TextEditingController();
 
   _buscaLoginDb(String _email ,String _password){
-    if(_email.toUpperCase() == "RAFAEL"){
-      if(_password == "14051402"){
+    if(_email.toUpperCase() == "USER"){
+      if(_password == "001"){
         setState(() {
           _emailError = false;
           _passworError = false;
@@ -47,7 +47,6 @@ class _ViewLoginComponentState extends State<ViewLoginComponent> {
       throw 'Could not launch $url';
     }
   }
-
 
   loginPassConfirmation(loginpass){
     if(loginpass == false){
